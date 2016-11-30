@@ -1,6 +1,6 @@
 {
   "name": "get-nested",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get nested value from json path and optionally supply fallback value",
   "main": "index.js",
   "scripts": {
@@ -13,5 +13,9 @@
     "json"
   ],
   "author": "Ian Wensink",
-  "license": "ISC"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ianwensink/get-nested.git"
+  }
 }
