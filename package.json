@@ -1,0 +1,17 @@
+{
+  "name": "get-nested",
+  "version": "1.0.1",
+  "description": "Get nested value from json path and optionally supply fallback value",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "keywords": [
+    "get-nested",
+    "nested",
+    "nest",
+    "json"
+  ],
+  "author": "Ian Wensink",
+  "license": "ISC"
+}
