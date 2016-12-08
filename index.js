@@ -10,7 +10,7 @@ module.exports = function (func, def) {
     }
 
     try {
-        return func() || def;
+        return func();
     } catch(e) {
         return def;
     }
