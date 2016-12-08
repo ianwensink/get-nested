@@ -20,6 +20,11 @@ var test = {
     }
 };
 
+// es6
+const result1 = getNested(() => test.foo.bar, 'fail');
+const result2 = getNested(() => test.bar.foo, 'fail');
+
+// es5
 var result1 = getNested(function () {
     return test.foo.bar; // test.foo.bar exists
 }, 'fail');
@@ -28,8 +33,8 @@ var result2 = getNested(function () {
     return test.bar.foo; //test.bar.foo doesn't exist so default value 'fail' is returned
 }, 'fail');
 
-console.info('result1:', result1);
-console.info('result2:', result2);
+console.info('result1:', result1); // result1: baz
+console.info('result2:', result2); // result2: fail
 ```
 
 ## Author
