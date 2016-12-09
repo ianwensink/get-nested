@@ -10,7 +10,11 @@ module.exports = function (func, def) {
     }
 
     try {
-        return func();
+        var result = func();
+        if(typeof result === 'undefined') {
+            return def;
+        }
+        return result;
     } catch(e) {
         return def;
     }
