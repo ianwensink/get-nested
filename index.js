@@ -5,17 +5,17 @@
  * @returns {*} Returns found value or fallback value
  */
 module.exports = function (func, def) {
-    if(typeof def === 'undefined' || !def) {
-        def = false; // Default fallback value is 'false'
-    }
+  if(typeof def === 'undefined' || !def) {
+    def = false; // Default fallback value is 'false'
+  }
 
-    try {
-        var result = func();
-        if(typeof result === 'undefined') {
-            return def;
-        }
-        return result;
-    } catch(e) {
-        return def;
+  try {
+    var result = func();
+    if(typeof result === 'undefined') {
+      return def;
     }
+    return result;
+  } catch(e) {
+    return def;
+  }
 };
