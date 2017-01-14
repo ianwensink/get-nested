@@ -11,7 +11,7 @@ module.exports = function (func, def) {
 
   try {
     var result = func();
-    if(typeof result === 'undefined') {
+    if(typeof result === 'undefined' || result === null) {
       return def;
     }
     return result;
